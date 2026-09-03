@@ -1,49 +1,58 @@
 # Carlos Ambrizi — Portfólio & Cartão de Visitas Digital
 
-Site pessoal de Carlos Ambrizi, desenvolvedor front-end. Funciona como portfólio (para recrutadores) e como cartão de visitas para captar clientes de pequenos negócios locais.
+[![Vercel](https://shields.io)](INSIRA_O_LINK_DO_VERCEL_AQUI)
 
-**Stack:** HTML5, CSS3 e JavaScript puro — sem frameworks, sem build step. Abra o `index.html` e está rodando.
+Site pessoal e comercial desenvolvido com o objetivo de demonstrar sólida base em desenvolvimento front-end com tecnologia nativa da web, além de funcionar como ferramenta de captação de clientes para pequenos negócios locais.
+
+## 🎯 Proposta do Projeto
+O projeto foi desenhado sob duas perspectivas estratégicas:
+1. **Recrutadores (Validação Técnica):** Demonstração de arquitetura limpa, lógica de programação pura, manipulação de API gráfica nativa e boas práticas de SEO/Acessibilidade sem dependência de frameworks.
+2. **Clientes Freelancer (Conversão):** Estrutura de copy persuasiva com quebra de objeções tradicionais de contratação e CTA focado em conversão direta via WhatsApp.
 
 ---
 
-## Estrutura do projeto
+## 🛠️ Stack Tecnológica
+*   **Estrutura:** HTML5 semântico
+*   **Estilização:** CSS3 nativo (Layouts com Flexbox/Grid, variáveis CSS, animações customizadas e responsividade completa)
+*   **Interatividade:** JavaScript Vanilla (ES6+) — *Zero frameworks, zero build steps, zero dependências.*
 
-```
+---
+
+## ⚡ Diferenciais Técnicos e Funcionalidades
+
+### 🏎️ Mini-Game de Corrida (Canvas API)
+Uma seção interativa com um jogo 2D desenvolvido inteiramente em `<canvas>`.
+*   Controle de loop de renderização otimizado com `requestAnimationFrame`.
+*   Lógica pura de detecção de colisão por caixas delimitadoras (Bounding Boxes).
+*   Persistência de recordes local utilizando a API de `localStorage`.
+
+### 📈 SEO Técnico & Performance
+*   **SEO Avançado:** Implementação de Microdados e Dados Estruturados utilizando o vocabulário `schema.org/ProfessionalService` para melhor rankeamento local.
+*   Presença de tags Open Graph e Twitter Cards para compartilhamento enriquecido em redes sociais.
+*   Arquivos `robots.txt` e `sitemap.xml` estruturados manualmente.
+
+### ♿ Acessibilidade e UX
+*   **Animações Inteligentes:** Utilização da media query `prefers-reduced-motion` para desativar ou suavizar animações para usuários com sensibilidades visuais.
+*   **Efeito Reveal:** Elementos surgem de forma fluida na tela utilizando a API nativa `IntersectionObserver`, garantindo performance superior em relação aos eventos tradicionais de scroll.
+
+### 📱 Automação Comercial
+*   Script inteligente em JS que intercepta o atributo customizado `data-wa-msg` em links e converte automaticamente em URLs dinâmicas codificadas para a API do WhatsApp, centralizando a gestão de mensagens em um único arquivo.
+
+---
+
+## 📁 Estrutura de Pastas
+```text
 .
-├── index.html                    # estrutura e conteúdo da página
+├── index.html          # Estrutura semântica e conteúdo da aplicação
 ├── assets/
 │   ├── css/
-│   │   └── style.css             # todo o visual (tema dark/tech, animações, responsividade)
+│   │   └── style.css   # Variáveis, tema dark/tech, responsividade e animações
 │   ├── javascript/
-│   │   └── script.js             # interatividade (menu, animações, jogo, WhatsApp)
-│   └── images/                   # imagens do site (ex: og-image, fotos de projetos)
-├── robots.txt                    # indexação para buscadores
-└── sitemap.xml                   # mapa do site para SEO
+│   │   └── script.js  # Lógica do jogo, IntersectionObserver e automação de links
+│   └── images/         # Recursos visuais, og-image e capturas de projetos
+├── robots.txt          # Regras para crawlers de busca
+└── sitemap.xml         # Mapa do site otimizado para motores de busca
 ```
 
-## Seções da página
-
-| Seção | O que faz |
-|---|---|
-| Hero | Nome com animação de onda letra a letra + CTA duplo (orçamento / portfólio) |
-| Sobre Mim | Copy persuasivo, chips de credibilidade e CTA direto |
-| Corrida no Circuito | Mini-game em `<canvas>` (desvie dos obstáculos) — demonstra domínio de Canvas API, `requestAnimationFrame` e detecção de colisão |
-| Serviços | O que está incluso em um projeto, com CTA de fechamento |
-| Como Funciona | Processo em 3 passos para reduzir a objeção de quem nunca contratou um freelancer |
-| Portfólio | Projetos reais entregues, links abrem em nova aba |
-| Depoimentos | Avaliações de clientes (aguardando conteúdo real) |
-| Rodapé | Redes sociais (Instagram, GitHub, LinkedIn) |
-
-## Funcionalidades técnicas
-
-- **Menu mobile** com toggle hambúrguer (`@media max-width: 768px`)
-- **Animação de revelo ao rolar** via `IntersectionObserver`, com fallback para navegadores antigos
-- **Nome animado** — cada letra vira um `<span>` com `animation-delay` escalonado
-- **Mini-game de corrida** — canvas 2D, faixas, obstáculos, pontuação e recorde salvo em `localStorage`
-- **WhatsApp com mensagem pronta** — todo link com atributo `data-wa-msg` é transformado em `https://wa.me/NUMERO?text=mensagem-codificada` pelo `script.js`
-- **`prefers-reduced-motion`** respeitado nas animações
-- **SEO técnico**: meta description, Open Graph, Twitter Card, dados estruturados (`schema.org/ProfessionalService`), `robots.txt` e `sitemap.xml`
-
 ---
-
-Feito por Carlos Ambrizi.
+Feito com 💻 por [Carlos Ambrizi](https://github.com).
