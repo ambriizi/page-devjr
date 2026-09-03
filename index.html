@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Carlos Ambrizi | Desenvolvedor Front-End — Sites para Empresas Locais</title>
+    <meta name="description" content="Desenvolvedor front-end especializado em sites rápidos e responsivos para pequenos negócios locais: salões, restaurantes, academias e prestadores de serviço. Orçamento sem compromisso.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://SEU-DOMINIO-AQUI.com.br/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:title" content="Carlos Ambrizi | Desenvolvedor Front-End">
+    <meta property="og:description" content="Sites rápidos e responsivos para empresas locais que querem uma presença digital de verdade.">
+    <meta property="og:url" content="https://SEU-DOMINIO-AQUI.com.br/">
+    <meta property="og:image" content="https://SEU-DOMINIO-AQUI.com.br/og-image.jpg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Carlos Ambrizi | Desenvolvedor Front-End">
+    <meta name="twitter:description" content="Sites rápidos e responsivos para empresas locais que querem uma presença digital de verdade.">
+    <meta name="twitter:image" content="https://SEU-DOMINIO-AQUI.com.br/og-image.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Carlos Ambrizi — Desenvolvimento Web",
+        "url": "https://SEU-DOMINIO-AQUI.com.br/",
+        "description": "Criação de sites responsivos sob medida para pequenos negócios locais.",
+        "priceRange": "$$",
+        "areaServed": "Brasil",
+        "founder": {
+            "@type": "Person",
+            "name": "Carlos Ambrizi",
+            "jobTitle": "Desenvolvedor Front-End",
+            "sameAs": [
+                "https://instagram.com/ambriizi",
+                "https://github.com/ambriizi",
+                "https://linkedin.com/in/ambriizi"
+            ]
+        }
+    }
+    </script>
+</head>
+<body>
+
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="logo">Carlos Ambrizi</div>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#game">Desafio</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#how-it-works">Como Funciona</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#reviews">Depoimentos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+
+        <section class="hero-section">
+            <div class="hero-container">
+                <h1 class="wave-name" id="waveName" aria-label="Carlos Ambrizi">Carlos Ambrizi</h1>
+                <p class="hero-tagline">Sites que fazem seu cliente ligar, não só olhar</p>
+                <p class="hero-subtext">Desenvolvo páginas rápidas, responsivas e feitas do zero para o seu negócio — sem templates genéricos que parecem com o de todo mundo.</p>
+                <div class="hero-actions">
+                    <a href="https://wa.me/5515976039817" data-wa-msg="Olá Carlos! Vi seu site e quero pedir um orçamento." target="_blank" rel="noopener noreferrer" class="btn-primary">Pedir orçamento grátis</a>
+                    <a href="#portfolio" class="btn-secondary">Ver projetos reais</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section element-hidden">
+            <div class="about-container">
+                <h2>Sobre Mim</h2>
+                <p class="about-lead">Seu concorrente já tem site. A pergunta é: o dele está trazendo mais clientes do que o seu?</p>
+
+                <p>Me chamo Carlos Ambrizi, desenvolvedor front-end formado em Análise e Desenvolvimento de Sistemas. Decidi me dedicar 100% a criar sites que ajudam pequenos negócios a vender mais — rápidos, responsivos e feitos sob medida pro seu negócio, sem templates genéricos que parecem com o de todo mundo.</p>
+                <p>Trabalho direto com você, do primeiro contato até o site no ar — sem agência no meio, sem enrolação.</p>
+
+                <div class="about-chips">
+                    <span class="chip">🎓 Formado em ADS</span>
+                    <span class="chip">💻 HTML · CSS · JS</span>
+                    <span class="chip">🎯 100% dedicado à programação</span>
+                    <span class="chip">⚡ Sites rápidos e responsivos</span>
+                </div>
+
+                <a href="https://wa.me/5515976039817" data-wa-msg="Olá Carlos! Gostei do seu site e quero um assim para o meu negócio." target="_blank" rel="noopener noreferrer" class="btn-primary about-cta">Quero um site assim</a>
+            </div>
+        </section>
+
+        <section id="game" class="game-section element-hidden">
+            <div class="game-container">
+                <h2>Corrida no Circuito 🏎️</h2>
+                <p class="game-subtitle">Desvie dos obstáculos e veja até onde sua velocidade te leva.</p>
+
+                <div class="game-hud">
+                    <div class="hud-item">Pontos: <span id="score">0</span></div>
+                    <div class="hud-item">Recorde: <span id="highScore">0</span></div>
+                    <button id="startGameBtn" class="btn-primary">Começar</button>
+                </div>
+
+                <div class="game-wrapper">
+                    <canvas id="gameCanvas" width="300" height="420" aria-label="Jogo de corrida: desvie dos obstáculos"></canvas>
+                    <p class="game-placeholder" id="gamePlaceholder">Clique em "Começar" para jogar</p>
+                </div>
+
+                <div class="game-controls">
+                    <button class="game-btn" id="btnLeft" aria-label="Mover para a esquerda">◀</button>
+                    <p class="game-hint">Use as setas ← → ou os botões</p>
+                    <button class="game-btn" id="btnRight" aria-label="Mover para a direita">▶</button>
+                </div>
+
+                <p class="game-result" id="gameResult" aria-live="polite"></p>
+                <p class="game-tech-note">Feito com Canvas API e JavaScript puro — sem bibliotecas ou frameworks.</p>
+            </div>
+        </section>
+
+        <section id="services" class="services-section">
+            <div class="services-container">
+                <h2>O Que Está Incluso no Seu Projeto?</h2>
+                <p class="services-subtitle">Soluções completas para garantir o melhor desempenho e o crescimento do seu negócio</p>
+
+                <div class="services-grid">
+
+                    <div class="service-card">
+                        <div class="service-icon">📱</div>
+                        <h3>Site 100% Responsivo</h3>
+                        <p>Seu site perfeitamente adaptado e otimizado para celulares, tablets e computadores, oferecendo uma experiência de navegação impecável em qualquer tela.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">⚡</div>
+                        <h3>Velocidade & SEO</h3>
+                        <p>Código limpo e otimizado para carregar instantaneamente, além de técnicas avançadas de SEO para ajudar sua empresa a se posicionar melhor no Google.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">🔗</div>
+                        <h3>Integração com Redes Sociais</h3>
+                        <p>Conexão direta com seu WhatsApp, Instagram, LinkedIn e demais canais para facilitar o contato do cliente e aumentar suas taxas de conversão.</p>
+                    </div>
+                </div>
+
+                <a href="https://wa.me/5515976039817" data-wa-msg="Olá Carlos! Vi os serviços do seu site e quero saber mais." target="_blank" rel="noopener noreferrer" class="btn-primary services-cta">Falar com Carlos agora</a>
+            </div>
+        </section>
+
+        <section id="how-it-works" class="how-section element-hidden">
+            <div class="how-container">
+                <h2>Como Funciona</h2>
+                <p class="how-subtitle">Do primeiro contato ao site no ar, sem burocracia</p>
+
+                <div class="how-grid">
+                    <div class="how-step">
+                        <span class="how-number">1</span>
+                        <h3>Você me conta sobre o negócio</h3>
+                        <p>Uma conversa rápida pelo WhatsApp sobre o que você faz e o que quer no site.</p>
+                    </div>
+                    <div class="how-step">
+                        <span class="how-number">2</span>
+                        <h3>Eu desenvolvo e te mostro</h3>
+                        <p>Você acompanha o andamento e pede ajustes até ficar do jeito que imaginou.</p>
+                    </div>
+                    <div class="how-step">
+                        <span class="how-number">3</span>
+                        <h3>Site no ar, pronto pra vender</h3>
+                        <p>Publicação, WhatsApp integrado e você já pode divulgar pros seus clientes.</p>
+                    </div>
+                </div>
+
+                <a href="https://wa.me/5515976039817" data-wa-msg="Olá Carlos! Vi como funciona no seu site e quero começar meu projeto." target="_blank" rel="noopener noreferrer" class="btn-primary how-cta">Começar agora</a>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio-section element-hidden">
+            <div class="portfolio-container">
+                <h2>Projetos Já Entregues</h2>
+                <p class="portfolio-subtitle">Alguns sites que já desenvolvi para clientes — clique para ver ao vivo</p>
+
+                <div class="portfolio-grid">
+
+                    <a href="https://page-manicure.vercel.app/" target="_blank" rel="noopener noreferrer" class="portfolio-card">
+                        <div class="portfolio-icon">💅</div>
+                        <h3>Unhas Perfeitas</h3>
+                        <p>Site para manicure/pedicure a domicílio, com agendamento via WhatsApp.</p>
+                        <span class="portfolio-link">Ver site ↗</span>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="reviews" class="reviews-section element-hidden">
+            <div class="reviews-container">
+                <h2>Clientes satisfeitos</h2>
+                <p class="reviews-subtitle">A opinião de quem já experimentou e recomenda nossos sites</p>
+
+                <div class="reviews-grid">
+
+                    <div class="review-card">
+                        <div class="rating-stars">⭐⭐⭐⭐⭐</div>
+                        <p class="review-text">Meu site ficou incrível e impulsionou meus agendamentos.</p>
+                        <div class="client-info">
+                            <span class="client-name">Caroline Ambrizi -</span>
+                            <span class="client-location"> Sorocaba/SP</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="social-links">
+            <a href="https://instagram.com/ambriizi" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-link">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+            </a>
+            <a href="https://github.com/ambriizi" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-link">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 .5C5.73.5.98 5.24.98 11.52c0 5.02 3.26 9.27 7.78 10.77.57.1.78-.25.78-.55 0-.27-.01-1.17-.02-2.12-3.17.69-3.84-1.35-3.84-1.35-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.75 1.18 1.75 1.18 1.02 1.75 2.68 1.25 3.33.95.1-.74.4-1.25.72-1.53-2.53-.29-5.19-1.27-5.19-5.63 0-1.24.44-2.26 1.17-3.06-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.14 1.17.91-.25 1.89-.38 2.86-.39.97.01 1.95.14 2.86.39 2.18-1.48 3.14-1.17 3.14-1.17.62 1.58.23 2.75.11 3.04.73.8 1.17 1.82 1.17 3.06 0 4.37-2.67 5.34-5.21 5.62.41.36.77 1.06.77 2.14 0 1.54-.01 2.79-.01 3.17 0 .3.2.66.79.55A11.03 11.03 0 0 0 23.02 11.5C23.02 5.24 18.27.5 12 .5z"/></svg>
+            </a>
+            <a href="https://linkedin.com/in/ambriizi" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-link">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27zM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+            </a>
+        </div>
+        <p>&copy; 2026 Carlos Ambrizi. Todos os direitos reservados</p>
+        <p>Built by Carlos Ambrizi - Front-End Developer</p>
+    </footer>
+
+    <a href="https://wa.me/5515976039817" data-wa-msg="Olá Carlos! Quero fazer um orçamento pro meu site." target="_blank" rel="noopener" class="whatsapp-float" id="whatsappBtn">
+        💬 Faça já seu orçamento
+    </a>
+    <script src="assets/javascript/script.js"></script>
+</body>
+</html>
