@@ -55,4 +55,4 @@ Uma seção interativa com um jogo 2D desenvolvido inteiramente em `<canvas>`.
 ```
 
 ---
-Feito com 💻 por [Carlos Ambrizi](https://github.com).
+Feito com 💻 por [Carlos Ambrizi](https://github.com/ambriizi).
